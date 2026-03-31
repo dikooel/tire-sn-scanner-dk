@@ -1,3 +1,4 @@
 easyocr
 pillow
 opencv-python-headless
+pyzbar
