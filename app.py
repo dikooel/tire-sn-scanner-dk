@@ -6,7 +6,7 @@ import numpy as np
 import gc
 from pyzbar.pyzbar import decode
 
-st.set_page_config(page_title="Tire Auditor", layout="wide")
+st.set_page_config(page_title="Tire SN Extractor", layout="wide")
 
 @st.cache_resource
 def load_reader():
@@ -41,7 +41,7 @@ def extract_sn(image):
         
     return "NOT FOUND"
 
-st.title("✈️ Lion Air Asset Auditor")
+st.title("🛞 Tire Serial Number Extractor by andikazhr")
 loc_choice = st.radio("Location:", ["K177 (S/S Tire)", "K180 (U/S Tire)"], horizontal=True)
 loc_code = "K177" if "K177" in loc_choice else "K180"
 
