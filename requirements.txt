@@ -1,0 +1,4 @@
+easyocr
+st-copy-button
+pillow
+opencv-python-headless
